@@ -1,3 +1,14 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.contrib import messages
+from .models import *
 
-# Create your views here.
+
+
+def AboutPage(request):
+    return render(request,'website/about.html')
+
+def ContactPage(request):
+    return render(request,'website/contact.html')
+
+def HomePage(request):
+    return render(request,'website/home.html')
