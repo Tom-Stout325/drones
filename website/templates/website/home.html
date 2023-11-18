@@ -7,12 +7,93 @@
 
 {% block content %}
 
+
 <body>
- 
-  <div>
-    <h1>This is the home page</h1>
+
+  <div id="hero">
+    <video loop muted autoplay preload="auto" style="margin-top: 78px;">
+      <source
+        src="https://photos.smugmug.com/Website/n-6x35Gw/Website-Images/i-7vwfrvS/0/7a9472ad/1280/background-1280.mp4"
+        type="video/mp4"/>
+          Your browser does not support the video tag.
+      </video>
+    <div class="caption">
+      <img style="width: 30%; opacity: .5" src="{% static 'images/logo_lrg.png' %}" alt="Airborn Images">
+    </div>
   </div>
- 
+
+  <div class="section-drone">
+    <div>
+      <h1 style="color: white; font-size: 2vw;">Unlock the Sky's Potential:</h1>
+      <br>
+        <h1 style="color: white; font-size: 1.25vw;">Elevate Your Business with Views from Above!</h1>
+    </div>
+  </div>
+
+  
+  <div class="container">
+    {% include 'components/cardRow.html' %}
+  </div>
+
+  <hr />
+  <br><br>
+  <div class="container">
+    <div class="row border-start shadow-lg rounded">
+      <div class="col-sm-6"
+          style="padding-top: 7rem;">
+          <h1>Wall Art</h1>
+          <h3 class="fw-lighter">All due respect to fireplaces, but nothing warms up a room like beautiful artwork of your favorite national treasures!</h3>
+      </div>
+      <div class="col-sm-6 rounded">
+          <img class="rounded" src="{% static 'images/SanFran.jpg' %}" width="100%" alt="San Francisco">        
+      </div>
+  </div>
+
+  <br><br><br>
+
+  <div class="row mt-5 border-end shadow-lg rounded">
+      <div class="col-sm-6">
+        <video loop muted autoplay preload="auto" controls height="300px" class="mt-5">
+          <source
+            src="https://photos.smugmug.com/Website/n-6x35Gw/Website-Images/i-kRwff9s/0/a0d8cd90/1280/live_stream-1280.mp4"
+            type="video/mp4"/>
+              Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="col-sm-6 text-end"
+          style="padding-top: 3rem;">
+          <h1>Live Streaming</h1>
+          <h3 class="fw-lighter">Our Drones are equipped with live streaming capabilities that allow event organizers to broadcast the event in real-time to a global audience. This is especially beneficial for large-scale events, conferences, or festivals, as it enables remote viewers to experience the event as if they were there. Live drone footage can enhance the overall virtual experience for online audiences.</h3>
+      </div>
+  </div>
+  
+  <br><br><br>
+
+  <div class="row border-start shadow-lg rounded">
+    <div class="col-sm-8"
+        style="padding-top: 7rem;">
+        <h1>Social Media Content</h1>
+        <h3 class="fw-lighter">Drones can be used in pre-event promotions to build anticipation, as well as in post-event marketing to showcase the success and highlights of the event. The visually stunning aerial shots can attract attention and generate interest from potential attendees, sponsors, and partners.</h3>
+  </div>
+  <div class="col-sm-4">
+      <video controls width="300" class="ml-5">
+        <source 
+          src="https://photos.smugmug.com/Website/n-6x35Gw/Website-Images/i-2NnrNSQ/0/95cd2616/1280/abn_imgs-1280.mp4"
+          type="video/mp4">
+        </source>
+      </video>
+  </div>
+</div>
+
+<div class="container mt-5 mb-5 text-center">
+  <h1>Contact Form</h1>
+</div>
+<div class="container mt-5 mb-5 text-center">
+  <h1>Social Media Links</h1>
+</div>
+<div class="container mt-5 mb-5 text-center">
+  <h1>Footer</h1>
+</div>
 </body>
 {% endblock %}
   
